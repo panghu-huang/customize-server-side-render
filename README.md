@@ -220,7 +220,7 @@ const str = ReactDOMServer.renderToString(serverEntry);
 
 > 但是发现 require 进来的 serverEntry 只是一个空对象。
 
-* 利用 `webpack-node-externals` 插件，webpack 将不打包 node_modules 下面的模块
+* 利用 `webpack-node-externals` 插件，webpack 将不打包 path, fs 等原生 node 模块下面的模块
 * output 中设置 libraryTarget 为 `commonjs`，webpack.server.js 如下：
 
 ```javascript
