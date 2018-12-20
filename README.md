@@ -135,7 +135,7 @@ $ yarn add object-assign prop-types scheduler -D
 
 最终结果并不是，是由于 resolve.extensions 中我只配置了 ts 和 tsx 结尾的文件类型，但是没有 js 和 jsx 结尾的。修改 webpack.base.js
 
-```
+```javascript
 const paths = require('./paths');
 
 module.exports = {
