@@ -10,11 +10,11 @@
 
 ## 新建项目
 
-```
-mkdir customize-server-side-render
-cd customize-server-side-render
+``` bash
+$ mkdir customize-server-side-render
+$ cd customize-server-side-render
 # 初始化一个 package.json
-yarn init -y
+$ yarn init -y
 ```
 
 > 基本项目目录
@@ -42,8 +42,8 @@ yarn init -y
 > 安装一些依赖，想尝试 React Hooks，所以安装了 next 版本，服务端用 koa
 
 ```bash
-yarn add react@next react-dom@next koa koa-router
-yarn add webpack webpack-cli ts-loader typescipt -D
+$ yarn add react@next react-dom@next koa koa-router
+$ yarn add webpack webpack-cli ts-loader typescipt -D
 ```
 
 > 首先在 config 下面创建一个 paths.js,声明了有用到的 paths
@@ -92,8 +92,8 @@ module.exports = {
 
 > 利用 `webpack-merge` 合并 webpack 配置
 
-```
-yarn add webpack-merge -D
+```bash
+$ yarn add webpack-merge -D
 ```
 
 * webpack.client.js
@@ -124,8 +124,8 @@ Module not found: Error: Can't resolve 'object-assign' in '/Users/logan/Projects
 
 > 打包时出现了一些依赖未安装的问题，是开发版本的 react 引入的库，这里都给他安装一下
 
-```
-yarn add object-assign prop-types scheduler -D
+```bash
+$ yarn add object-assign prop-types scheduler -D
 ```
 
 > 依然出现上面的问题
@@ -183,13 +183,13 @@ console.log('Application is running on http://127.0.0.1:3000');
 > 运行 `node server/index.js`,看见服务启动正常，但是修改了 `server` 下面的 `index.js` 无法自己重启 node 服务，所以准备利用 `nodemon` 运行
 
 ```bash
-yarn add nodemon -D
+$ yarn add nodemon -D
 ```
 
 > 修改启动脚本为
 
 ```bash
-nodemon server/index.js
+$ nodemon server/index.js
 ```
 
 > OK, node 服务能在修改后自己重启。
@@ -249,8 +249,8 @@ const serverEntry = require('../dist/server-entry').default;
 
 > 然后就可以看见浏览器上显示出了 <App /> 的内容，但是每次运行都要 `yarn dev:client`、`yarn dev:server`、`yarn dev`，而且还不能用 `&&` 连接，因为 `yarn dev:client` 中 `webpack --watch` 会卡在当前进程，所以可以用 `npm-run-all` 一次运行三个脚本
 
-```
-yarn add npm-run-all -D
+```bash
+$ yarn add npm-run-all -D
 ```
 
 > 最终启动脚本变为：
@@ -360,7 +360,7 @@ module.exports = merge(baseConfig, {
 > 安装依赖
 
 ```bash
-yarn add style-loader css-loader scss-loader node-sass -D
+$ yarn add style-loader css-loader scss-loader node-sass -D
 ```
 
 客户端打包没问题，但是 style-loader 需要 window 对象，但是 `webpack.server.js` 是打包给 node 用的，没有 window ，会报错
