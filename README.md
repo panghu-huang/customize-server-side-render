@@ -1,5 +1,6 @@
 # TypeScript + Webpack + Koa 搭建自定义的 React 服务端渲染
 
+
 ## 原理：
 
 1. 利用 webpack 打包能在 node 运行的 React 代码，利用 `react-dom/server` 将 React 代码渲染成 html 字符串返回给客户端
@@ -263,7 +264,7 @@ $ yarn add npm-run-all -D
 
 > 在 `public` 下面新建一个 `index.html`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -316,7 +317,7 @@ console.log('Application is running on http://127.0.0.1:3000');
 
 * 将 `public` 设置为静态资源目录
 
-```
+```javascript
 const koaStatic = require('koa-static');
 
 const app = new Koa();
