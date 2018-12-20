@@ -7,6 +7,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+      src: paths.sourceDir,
+    },
   },
   module: {
     rules: [

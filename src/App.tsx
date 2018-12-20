@@ -1,21 +1,23 @@
 import * as React from 'react';
-import { Route } from 'react-router-dom';
-import Container from './components/Container';
-import Home from './components/Home';
-import Login from './components/Login';
+import Header from './components/Header';
 import './global.scss';
 
-class App extends React.Component {
+interface IAppProps {
+  children?: any;
+};
+
+class App extends React.Component<IAppProps> {
 
   public render() {
+    const { children } = this.props;
     return (
-      <Container>
-        <Route exact path='/' component={Home}/>
-        <Route path='/login' component={Login}/>
-      </Container>
+      <>
+        <Header />
+        {children}
+      </>
     )
   }
-  
+
 }
 
 export default App;

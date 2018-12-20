@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/Container/style.scss":
-/*!****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/Container/style.scss ***!
-  \****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".container {\\n  font-weight: bold; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/Container/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/global.scss":
 /*!********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/global.scss ***!
@@ -818,54 +807,19 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Container */ \"./src/components/Container/index.tsx\");\n/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Home */ \"./src/components/Home.tsx\");\n/* harmony import */ var _components_Login__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Login */ \"./src/components/Login.tsx\");\n/* harmony import */ var _global_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./global.scss */ \"./src/global.scss\");\n/* harmony import */ var _global_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_global_scss__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\nvar App = /** @class */ (function (_super) {\n    tslib__WEBPACK_IMPORTED_MODULE_0__[\"__extends\"](App, _super);\n    function App() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    App.prototype.render = function () {\n        return (react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](_components_Container__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null,\n            react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__[\"Route\"], { exact: true, path: '/', component: _components_Home__WEBPACK_IMPORTED_MODULE_4__[\"default\"] }),\n            react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__[\"Route\"], { path: '/login', component: _components_Login__WEBPACK_IMPORTED_MODULE_5__[\"default\"] })));\n    };\n    return App;\n}(react__WEBPACK_IMPORTED_MODULE_1__[\"Component\"]));\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ \"./src/components/Header.tsx\");\n/* harmony import */ var _global_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./global.scss */ \"./src/global.scss\");\n/* harmony import */ var _global_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_global_scss__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n;\nvar App = /** @class */ (function (_super) {\n    tslib__WEBPACK_IMPORTED_MODULE_0__[\"__extends\"](App, _super);\n    function App() {\n        return _super !== null && _super.apply(this, arguments) || this;\n    }\n    App.prototype.render = function () {\n        var children = this.props.children;\n        return (react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](react__WEBPACK_IMPORTED_MODULE_1__[\"Fragment\"], null,\n            react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](_components_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null),\n            children));\n    };\n    return App;\n}(react__WEBPACK_IMPORTED_MODULE_1__[\"Component\"]));\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
 
 /***/ }),
 
-/***/ "./src/components/Container/index.tsx":
-/*!********************************************!*\
-  !*** ./src/components/Container/index.tsx ***!
-  \********************************************/
+/***/ "./src/components/Header.tsx":
+/*!***********************************!*\
+  !*** ./src/components/Header.tsx ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/components/Container/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n;\nvar Container = function (_a) {\n    var children = _a.children;\n    return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", { className: 'container' }, children));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Container);\n\n\n//# sourceURL=webpack:///./src/components/Container/index.tsx?");
-
-/***/ }),
-
-/***/ "./src/components/Container/style.scss":
-/*!*********************************************!*\
-  !*** ./src/components/Container/style.scss ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js!./style.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/Container/style.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/Container/style.scss?");
-
-/***/ }),
-
-/***/ "./src/components/Home.tsx":
-/*!*********************************!*\
-  !*** ./src/components/Home.tsx ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n\n\nvar Home = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", { className: 'home' },\n        \"Home \",\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], { to: '/login' }, \"to login\")));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n\n//# sourceURL=webpack:///./src/components/Home.tsx?");
-
-/***/ }),
-
-/***/ "./src/components/Login.tsx":
-/*!**********************************!*\
-  !*** ./src/components/Login.tsx ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar Login = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", { className: 'Login' }, \"Login\"));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Login);\n\n\n//# sourceURL=webpack:///./src/components/Login.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n\n\nvar Header = function () {\n    return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", { className: 'Header' },\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], { to: '/' }, \"home\"),\n        \" \",\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], { to: '/login' }, \"login\")));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n\n//# sourceURL=webpack:///./src/components/Header.tsx?");
 
 /***/ }),
 
@@ -888,7 +842,55 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ \"./src/App.tsx\");\n\n\n\n\nObject(react_dom__WEBPACK_IMPORTED_MODULE_1__[\"hydrate\"])((react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__[\"BrowserRouter\"], null,\n    react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_App__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null))), document.querySelector('.app-container'));\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n/* harmony import */ var src_routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/routes */ \"./src/routes/index.ts\");\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./App */ \"./src/App.tsx\");\n\n\n\n\n\n\nvar appDefaultProps = window._APP_DEFAULT_PROPS_;\nvar injectPropsScript = document.getElementById('injectProps');\ninjectPropsScript.parentNode.removeChild(injectPropsScript);\nObject(react_dom__WEBPACK_IMPORTED_MODULE_2__[\"hydrate\"])((react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_3__[\"BrowserRouter\"], null,\n    react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](_App__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null,\n        react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_3__[\"Switch\"], null, src_routes__WEBPACK_IMPORTED_MODULE_4__[\"default\"].map(function (_a) {\n            var component = _a.component, key = _a.key, rest = tslib__WEBPACK_IMPORTED_MODULE_0__[\"__rest\"](_a, [\"component\", \"key\"]);\n            var pageProps = appDefaultProps[key] || {};\n            component.defaultProps = tslib__WEBPACK_IMPORTED_MODULE_0__[\"__assign\"]({}, (component.defaultProps || {}), pageProps);\n            return (react__WEBPACK_IMPORTED_MODULE_1__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_3__[\"Route\"], tslib__WEBPACK_IMPORTED_MODULE_0__[\"__assign\"]({}, rest, { key: key, component: component })));\n        }))))), document.querySelector('.app-container'));\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/pages/Home.tsx":
+/*!****************************!*\
+  !*** ./src/pages/Home.tsx ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/es/index.js\");\n\n\n;\nvar Home = function (_a) {\n    var name = _a.name;\n    console.log('Home name', name);\n    return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", { className: 'home' },\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"p\", null,\n            \"Home \",\n            name),\n        react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], { to: '/login' }, \"to login\")));\n};\nHome.getInitialProps = function () {\n    return {\n        name: 'Name',\n    };\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n\n//# sourceURL=webpack:///./src/pages/Home.tsx?");
+
+/***/ }),
+
+/***/ "./src/pages/Login.tsx":
+/*!*****************************!*\
+  !*** ./src/pages/Login.tsx ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar Login = function (_a) {\n    var login = _a.login;\n    return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", { className: 'Login' },\n        \"Login \",\n        login));\n};\nLogin.getInitialProps = function () {\n    return {\n        login: 'Login',\n    };\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Login);\n\n\n//# sourceURL=webpack:///./src/pages/Login.tsx?");
+
+/***/ }),
+
+/***/ "./src/pages/index.ts":
+/*!****************************!*\
+  !*** ./src/pages/index.ts ***!
+  \****************************/
+/*! exports provided: Home, Login */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home */ \"./src/pages/Home.tsx\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Home\", function() { return _Home__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n/* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login */ \"./src/pages/Login.tsx\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Login\", function() { return _Login__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; });\n\n\n\n\n\n//# sourceURL=webpack:///./src/pages/index.ts?");
+
+/***/ }),
+
+/***/ "./src/routes/index.ts":
+/*!*****************************!*\
+  !*** ./src/routes/index.ts ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var src_pages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/pages */ \"./src/pages/index.ts\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ([\n    {\n        path: '/',\n        key: 'home',\n        exact: true,\n        component: src_pages__WEBPACK_IMPORTED_MODULE_0__[\"Home\"],\n    },\n    {\n        path: '/login',\n        key: 'login',\n        component: src_pages__WEBPACK_IMPORTED_MODULE_0__[\"Login\"],\n    }\n]);\n\n\n//# sourceURL=webpack:///./src/routes/index.ts?");
 
 /***/ })
 

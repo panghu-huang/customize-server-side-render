@@ -11,8 +11,8 @@ app.use(koaStatic('public', {
   maxage: 10,
 }));
 
-router.get('*', (ctx) => {
-  ctx.body = render(ctx);
+router.get('*', async (ctx) => {
+  ctx.body = await render(ctx);
   ctx.type = 'html';
 });
 

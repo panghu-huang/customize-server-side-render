@@ -6,6 +6,9 @@
   </head>
   <body>
     <div class="app-container"><slot /></div>
+    <script type="text/javascript" id='injectProps'>
+      window._APP_DEFAULT_PROPS_ = __app_default_props__;
+    </script>
     <script type="text/javascript" src='/app.js'></script>
   </body>
 </html>
